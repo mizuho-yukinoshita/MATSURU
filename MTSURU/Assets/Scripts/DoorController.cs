@@ -32,7 +32,7 @@ public class DoorController : MonoBehaviour
     void Update()
     {
         Move();
-        checkGameOver();
+        CheckGameOver();
     }
 
     void Move()
@@ -49,7 +49,7 @@ public class DoorController : MonoBehaviour
         }
     }
 
-    void checkGameOver()
+    void CheckGameOver()
     {
         if (openDuration > TIMEOUT)
         {
