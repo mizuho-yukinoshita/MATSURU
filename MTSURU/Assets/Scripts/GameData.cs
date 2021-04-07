@@ -23,7 +23,7 @@ public class GameData
             _numComplete = value;
             if (d > 0)
             {
-                OnCompelte(d);
+                OnComplete();
             }
         }
         get => _numComplete;
@@ -84,7 +84,7 @@ public class GameData
         return keyEnemyMap.Count > 0;
     }
 
-    public static void OnCompelte(int n)
+    private static void OnComplete()
     {
         magicPoint += 3;
         AudioManager.PlaySound(AudioManager.SoundList.SE_COMPLETE);
